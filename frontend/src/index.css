@@ -1,0 +1,2635 @@
+/* src/index.css */
+
+/* Gaya untuk Landing Page */
+.landing-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #ebf8ff, white); /* Gradient dari biru ke putih */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem; /* padding px-6 */
+  text-align: center;
+}
+
+.landing-title {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  color: #3182ce; /* text-blue-700 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.landing-text {
+  color: #4a5568; /* text-gray-600 */
+  margin-bottom: 2rem; /* mb-8 */
+}
+
+.landing-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* gap-4 */
+}
+
+.landing-buttons.sm {
+  flex-direction: row;
+}
+
+.landing-button {
+  padding: 0.5rem 1.5rem; /* px-6 py-2 */
+  border-radius: 0.375rem; /* rounded */
+  font-weight: 500; /* font-medium */
+}
+
+.landing-button-primary {
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+}
+
+.landing-button-primary:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+
+.landing-button-secondary {
+  background-color: #edf2f7; /* bg-gray-100 */
+  color: #2d3748; /* text-gray-800 */
+}
+
+.landing-button-secondary:hover {
+  background-color: #e2e8f0; /* hover:bg-gray-200 */
+}
+
+/* Gaya untuk halaman login */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebf8ff; /* bg-blue-50 */
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem; /* px-4 */
+}
+
+.login-box {
+  width: 100%;
+  max-width: 24rem; /* max-w-sm */
+  background-color: white;
+  border-radius: 0.375rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  padding: 1.5rem; /* p-6 */
+}
+
+.login-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700; /* font-bold */
+  color: #2d3748; /* text-gray-800 */
+  margin-bottom: 1rem; /* mb-4 */
+  text-align: center;
+}
+
+.role-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* gap-4 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.role-button {
+  padding: 0.25rem 0.75rem; /* px-3 py-1 */
+  border-radius: 0.375rem; /* rounded */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  cursor: pointer;
+}
+
+.role-button.siswa {
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+}
+
+.role-button.siswa:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+
+.role-button.admin {
+  background-color: #edf2f7; /* bg-gray-200 */
+  color: #2d3748; /* text-gray-700 */
+}
+
+.role-button.admin:hover {
+  background-color: #e2e8f0; /* hover:bg-gray-200 */
+}
+
+.error-text {
+  font-size: 0.875rem; /* text-sm */
+  color: #f56565; /* text-red-500 */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* space-y-4 */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem; /* gap-2 */
+}
+
+.input-label {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  color: #4a5568; /* text-gray-600 */
+}
+
+.input-field {
+  padding: 0.5rem 0.75rem; /* px-3 py-2 */
+  border: 1px solid #e2e8f0; /* border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.375rem; /* rounded */
+  font-weight: 600; /* font-semibold */
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+
+.toggle-link {
+  font-size: 0.875rem; /* text-sm */
+  text-align: center;
+  color: #3182ce; /* text-blue-600 */
+  cursor: pointer;
+}
+
+.toggle-link:hover {
+  text-decoration: underline; /* hover:underline */
+}
+
+/* Gaya untuk halaman UserStatus */
+.user-status-container {
+  padding: 1.5rem; /* p-6 */
+  background-color: #f7fafc; /* bg-gray-100 */
+  min-height: 100vh; /* min-h-screen */
+}
+
+.user-status-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600; /* font-semibold */
+  color: #e53e3e; /* text-red-700 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.no-books-text {
+  color: #a0aec0; /* text-gray-500 */
+}
+
+.books-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-item {
+  background-color: white;
+  padding: 1rem; /* p-4 */
+  border-radius: 0.375rem; /* rounded */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title {
+  font-weight: 700; /* font-bold */
+}
+
+.book-author {
+  font-size: 0.875rem; /* text-sm */
+  color: #4a5568; /* text-gray-600 */
+}
+
+.return-button {
+  background-color: #ecc94b; /* bg-yellow-500 */
+  color: white;
+  padding: 0.25rem 0.75rem; /* px-3 py-1 */
+  border-radius: 0.375rem; /* rounded */
+  transition: background-color 0.2s;
+}
+.return-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+}
+
+.return-button:hover {
+  background-color: #d69e2e; /* hover:bg-yellow-600 */
+}
+
+/* Gaya untuk UserLayout */
+.user-layout-container {
+  min-height: 100vh; /* min-h-screen */
+  background-color: #f7fafc; /* bg-gray-50 */
+  padding-bottom: 5rem; /* pb-20 */
+}
+
+.bottom-nav-container {
+  padding-bottom: 1rem; /* Menambahkan padding untuk BottomNav */
+}
+
+/* Gaya untuk UserDashboard */
+.user-dashboard-container {
+  background-color: #f7fafc; /* bg-gray-100 */
+  min-height: 100vh; /* min-h-screen */
+  padding-bottom: 5rem; /* pb-20 */
+}
+
+.user-dashboard-header {
+  background-color: #2b6cb0; /* bg-blue-700 */
+  color: white;
+  padding: 1rem 1.5rem; /* p-4 */
+  border-radius: 1.5rem 1.5rem 0 0; /* rounded-b-3xl */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+}
+
+
+.user-dashboard-content {
+  padding: 1rem; /* p-4 */
+  margin-bottom: 2rem; /* space-y-6 */
+}
+
+.search-bar-container {
+  margin-top: 1rem; /* mt-4 */
+}
+
+.bottom-nav-container {
+  padding-bottom: 1rem; /* Menambahkan padding untuk BottomNav */
+}
+
+/* Gaya untuk PinjamanPage */
+.pinjaman-container {
+  padding: 1rem;
+}
+
+.pinjaman-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.no-books-text {
+  color: #718096; /* abu */
+}
+
+.books-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+.book-cover {
+  width: 60px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  flex-shrink: 0;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.book-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2d3748;
+}
+
+.return-button {
+  padding: 0.4rem 0.75rem;
+  border: none;
+  border-radius: 0.375rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.return-button:hover {
+  background-color: #c53030; /* merah lebih gelap saat hover */
+}
+
+/* src/index.css */
+
+/* Gaya untuk AdminDashboard */
+.admin-dashboard-container {
+  background-color: #f7fafc; /* bg-gray-50 */
+  min-height: 100vh; /* min-h-screen */
+  padding-bottom: 5rem; /* pb-20 */
+  padding: 1.5rem; /* p-6 */
+  /* Untuk menggantikan space-y-6, gunakan margin-bottom pada elemen anak jika perlu */
+}
+
+/* Jika ingin memberikan jarak vertikal antar elemen, bisa menggunakan margin-bottom pada elemen anak */
+.admin-dashboard-container > *:not(:last-child) {
+  margin-bottom: 1.5rem; /* margin-bottom setara dengan space-y-6 */
+}
+
+
+.admin-dashboard-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700; /* font-bold */
+  color: #2b6cb0; /* text-blue-700 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.stat-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  width: 200px;
+  height: 120px;
+  color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stat-card.orange {
+  background-color: #f97316;
+}
+
+.stat-card.green {
+  background-color: #22c55e;
+}
+
+.stat-card.blue {
+  background-color: #3b82f6;
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+
+/* Button umum */
+.button {
+  padding: 0.5rem 1.5rem; /* px-6 py-2 */
+  border-radius: 0.375rem; /* rounded */
+  font-weight: 500; /* font-medium */
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+}
+
+.button-primary:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+
+.button-secondary {
+  background-color: #edf2f7; /* bg-gray-100 */
+  color: #2d3748; /* text-gray-800 */
+}
+
+.button-secondary:hover {
+  background-color: #e2e8f0; /* hover:bg-gray-200 */
+}
+
+/* Form Add/Edit Buku */
+.form-container {
+  background-color: white;
+  padding: 1rem; /* p-4 */
+  border-radius: 0.375rem; /* rounded */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+}
+
+.form-input {
+  padding: 0.5rem 0.75rem; /* px-3 py-2 */
+  border: 1px solid #e2e8f0; /* border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+}
+
+.form-input-full {
+  width: 100%; /* w-full */
+}
+
+/* Table Daftar Buku */
+.table-container {
+  background-color: white;
+  padding: 1rem; /* p-4 */
+  border-radius: 0.375rem; /* rounded */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem; /* p-2 */
+  border-bottom: 1px solid #e2e8f0; /* border-b */
+}
+
+.table-header {
+  background-color: #edf2f7; /* bg-gray-100 */
+}
+
+.table-button {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #3182ce; /* text-blue-600 */
+}
+
+.table-button:hover {
+  color: #2b6cb0; /* hover:text-blue-700 */
+}
+
+/* Validasi Pengembalian Buku */
+.return-book-container {
+  background-color: white;
+  padding: 1rem; /* p-4 */
+  border-radius: 0.375rem; /* rounded */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+}
+
+.return-button {
+  background-color: #48bb78; /* bg-green-500 */
+  color: white;
+  padding: 0.25rem 0.75rem; /* px-3 py-1 */
+  border-radius: 0.375rem; /* rounded */
+  cursor: pointer;
+}
+
+.return-button:hover {
+  background-color: #38a169; /* hover:bg-green-600 */
+}
+
+/* Laporan Peminjaman */
+.report-container {
+  background-color: white;
+  padding: 1rem; /* p-4 */
+  border-radius: 0.375rem; /* rounded */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+}
+
+.report-item {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 0.5rem;
+}
+
+/* CRUD Kategori Buku */
+.category-container {
+  background-color: white;
+  padding: 1rem; /* p-4 */
+  border-radius: 0.375rem; /* rounded */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+}
+
+.category-input {
+  padding: 0.5rem 0.75rem; /* px-3 py-2 */
+  border: 1px solid #e2e8f0; /* border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+}
+
+.category-button {
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+  padding: 0.5rem 1.5rem; /* px-6 py-2 */
+  border-radius: 0.375rem; /* rounded */
+  cursor: pointer;
+}
+
+.category-button:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+
+/* Bottom Navigation */
+.bottom-nav-container {
+  padding-bottom: 1rem; /* Menambahkan padding untuk BottomNav */
+}
+/* src/index.css */
+
+/* Gaya untuk BookList */
+.book-list-container {
+  display: grid;
+  grid-template-columns: 1fr; /* grid-cols-1 */
+  gap: 1rem; /* gap-4 */
+}
+
+@media (min-width: 768px) {
+  .book-list-container {
+    grid-template-columns: repeat(2, 1fr); /* grid-cols-2 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .book-list-container {
+    grid-template-columns: repeat(3, 1fr); /* grid-cols-3 */
+  }
+}
+
+.book-item {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  padding: 1rem; /* p-4 */
+  border-radius: 0.375rem; /* rounded */
+  border: 1px solid #e2e8f0; /* border */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 700; /* font-bold */
+  color: #2d3748; /* text-gray-800 */
+}
+
+.book-author {
+  color: #4a5568; /* text-gray-600 */
+}
+
+.book-status {
+  font-size: 0.875rem; /* text-sm */
+  margin-top: 0.25rem; /* mt-1 */
+}
+
+.book-status span {
+  font-weight: 600; /* font-semibold */
+}
+
+.book-status-available {
+  color: #38a169; /* text-green-600 */
+}
+
+.book-status-unavailable {
+  color: #e53e3e; /* text-red-600 */
+}
+
+.book-button {
+  margin-top: 1rem; /* mt-4 */
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+  border-radius: 0.375rem; /* rounded */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+/* src/index.css */
+
+/* Gaya untuk BottomNav */
+.bottom-nav-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-top: 1px solid #e2e8f0; /* border-t */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* shadow-inner */
+  border-radius: 1rem 1rem 0 0; /* rounded-t-xl */
+  z-index: 50;
+}
+
+.bottom-nav-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0; /* py-2 */
+  font-size: 0.875rem; /* text-sm */
+}
+
+.bottom-nav-button {
+  color: #3182ce; /* text-blue-600 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bottom-nav-button-inactive {
+  color: #4a5568; /* text-gray-600 */
+}
+
+.bottom-nav-logout {
+  color: #dd6b20; /* text-orange-600 */
+}
+
+/* Gaya untuk Logout Confirm Modal */
+.logout-modal-container {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4); /* bg-black bg-opacity-40 */
+}
+
+.logout-modal {
+  background-color: white;
+  border-radius: 0.375rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-xl */
+  padding: 1.5rem; /* p-6 */
+  width: 20rem; /* w-80 */
+  text-align: center;
+}
+
+.logout-modal-title {
+  font-size: 1rem; /* text-base */
+  font-weight: 600; /* font-semibold */
+  color: #2d3748; /* text-gray-800 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.logout-modal-button {
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+  padding: 0.5rem 1.5rem; /* py-2 px-4 */
+  border-radius: 0.375rem; /* rounded */
+  font-weight: 600; /* font-semibold */
+  cursor: pointer;
+}
+
+.logout-modal-button:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+
+.logout-modal-cancel {
+  color: #e53e3e; /* text-red-500 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.logout-modal-cancel:hover {
+  color: #e53e3e; /* hover:text-red-600 */
+}
+/* src/index.css */
+
+/* Gaya untuk BottomNavAdmin */
+.bottom-nav-admin-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-top: 1px solid #e2e8f0; /* border-t */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* shadow-inner */
+  border-radius: 1rem 1rem 0 0; /* rounded-t-xl */
+  z-index: 50;
+}
+
+.bottom-nav-admin-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0; /* py-2 */
+  font-size: 0.875rem; /* text-sm */
+}
+
+.bottom-nav-admin-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bottom-nav-admin-button-dashboard {
+  color: #3182ce; /* text-blue-600 */
+}
+
+.bottom-nav-admin-button-books {
+  color: #4a5568; /* text-gray-600 */
+}
+
+.bottom-nav-admin-button-logout {
+  color: #dd6b20; /* text-orange-600 */
+}
+
+/* Gaya untuk Logout Confirm Modal */
+.logout-admin-modal-container {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4); /* bg-black bg-opacity-40 */
+}
+
+.logout-admin-modal {
+  background-color: white;
+  border-radius: 0.375rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-xl */
+  padding: 1.5rem; /* p-6 */
+  width: 20rem; /* w-80 */
+  text-align: center;
+}
+
+.logout-admin-modal-title {
+  font-size: 1rem; /* text-base */
+  font-weight: 600; /* font-semibold */
+  color: #2d3748; /* text-gray-800 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.logout-admin-modal-button {
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+  padding: 0.5rem 1.5rem; /* py-2 px-4 */
+  border-radius: 0.375rem; /* rounded */
+  font-weight: 600; /* font-semibold */
+  cursor: pointer;
+}
+
+.logout-admin-modal-button:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+
+.logout-admin-modal-cancel {
+  color: #e53e3e; /* text-red-500 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.logout-admin-modal-cancel:hover {
+  color: #e53e3e; /* hover:text-red-600 */
+}
+/* src/index.css */
+
+/* Gaya untuk BukuPopuler */
+.buku-populer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* mb-2 */
+}
+
+.buku-populer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.25rem; /* px-1 */
+}
+
+.buku-populer-title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  color: #2d3748; /* text-gray-800 */
+}
+
+.buku-populer-button {
+  font-size: 0.875rem; /* text-sm */
+  color: #3182ce; /* text-blue-600 */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.buku-populer-button:hover {
+  color: #2b6cb0; /* hover:text-blue-700 */
+}
+
+.buku-list-container {
+  display: flex;
+  gap: 0.75rem; /* gap-3 */
+  overflow-x: auto;
+  padding-bottom: 0.5rem; /* pb-2 */
+  scroll-behavior: smooth;
+}
+
+.buku-item {
+  min-width: 120px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+  border-radius: 0.375rem; /* rounded-lg */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 16rem; /* h-64 */
+}
+
+.buku-image {
+  width: 100%;
+  height: 9rem; /* h-36 */
+  object-fit: cover; /* object-cover */
+  border-top-left-radius: 0.375rem; /* rounded-t */
+}
+
+.buku-info {
+  padding: 0.5rem 0.5rem; /* px-2 py-2 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buku-title {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.buku-button {
+  padding: 6px 12px;
+  background-color: #2978f0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  /* hapus flex: 1 supaya tombol tidak melebar */
+  width: auto;
+}
+.buku-button-available + .buku-button-available {
+  margin-left: 8px;
+  background-color: #f0a500;
+}
+
+
+.buku-button-available:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-600 */
+}
+
+.buku-button-unavailable {
+  background-color: #cbd5e0; /* bg-gray-400 */
+  cursor: not-allowed;
+}
+
+.buku-button-unavailable:hover {
+  background-color: #e2e8f0; /* hover:bg-gray-400 */
+}
+/* src/index.css */
+
+/* src/index.css */
+/* src/components/HeaderUser.css */
+.header-user-container {
+  position: relative;
+  padding: 1rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  color: white;
+  overflow: hidden;
+}
+
+/* Layer warna biru dengan gradasi transparan */
+.header-user-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(43, 108, 176, 0.7),
+    rgba(33, 203, 243, 0.4)
+  );
+  z-index: 0;
+}
+
+/* Layer blur di atas background */
+.header-user-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 1;
+}
+
+/* Konten header agar selalu di atas */
+.header-user-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-user-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-user-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.header-user-target {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Gaya untuk ModalPinjam */
+.modal-container {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* bg-black bg-opacity-40 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 0.375rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  padding: 1.5rem; /* p-6 */
+  max-width: 24rem; /* max-w-sm */
+  width: 100%;
+}
+
+.modal-title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.modal-description {
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.modal-button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem; /* gap-2 */
+}
+
+.modal-button {
+  padding: 0.25rem 1rem; /* px-4 py-1 */
+  border-radius: 0.375rem; /* rounded */
+  font-size: 0.875rem; /* text-sm */
+}
+
+.modal-button-cancel {
+  background-color: #e2e8f0; /* bg-gray-300 */
+  cursor: pointer;
+}
+
+.modal-button-cancel:hover {
+  background-color: #cbd5e0; /* hover:bg-gray-400 */
+}
+
+.modal-button-confirm {
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+  cursor: pointer;
+}
+
+.modal-button-confirm:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+/* src/index.css */
+
+/* Gaya untuk SearchBar */
+.search-bar-container {
+  position: relative;
+  width: 100%;
+  max-width: 24rem; /* max-w-md */
+  margin: 0 auto;
+}
+
+.search-bar-input {
+  width: 100%;
+  padding-left: 2.5rem; /* pl-10 */
+  padding-right: 1rem; /* pr-4 */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 9999px; /* rounded-full */
+  border: 1px solid #e2e8f0; /* border */
+  outline: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+  transition: all 0.3s ease;
+}
+
+.search-bar-input:focus {
+  border-color: #2b6cb0; /* focus:ring-blue-400 */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* focus:ring-2 */
+}
+
+.search-bar-icon {
+  position: absolute;
+  left: 1rem; /* left-4 */
+  top: 50%;
+  transform: translateY(-50%); /* -translate-y-1/2 */
+  color: #a0aec0; /* text-gray-400 */
+  font-size: 1.25rem; /* FaSearch size */
+}
+/* Container utama */
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Judul */
+.container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form label dan input */
+label {
+  display: block;
+  margin-bottom: 15px;
+  color: #444;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 6px rgba(74,144,226,0.3);
+}
+
+/* Error message */
+.error {
+  background-color: #ffe6e6;
+  color: #cc0000;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Tombol submit */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #4a90e2;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  background-color: #357abd;
+}
+
+button[type="submit"]:disabled {
+  background-color: #a1c0f3;
+  cursor: not-allowed;
+}
+
+/* Tombol toggle */
+.toggle-button {
+  display: block;
+  margin: 20px auto 0;
+  background: none;
+  border: none;
+  color: #4a90e2;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.toggle-button:hover:not(:disabled) {
+  color: #357abd;
+}
+
+.toggle-button:disabled {
+  color: #a1c0f3;
+  cursor: not-allowed;
+}
+/* src/index.css */
+
+/* Gaya untuk Landing Page */
+.landing-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #ebf8ff, white); /* Gradient dari biru ke putih */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem; /* padding px-6 */
+  text-align: center;
+}
+
+.landing-title {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  color: #3182ce; /* text-blue-700 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.landing-text {
+  color: #4a5568; /* text-gray-600 */
+  margin-bottom: 2rem; /* mb-8 */
+}
+
+.landing-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* gap-4 */
+}
+
+.landing-buttons.sm {
+  flex-direction: row;
+}
+
+.landing-button {
+  padding: 0.5rem 1.5rem; /* px-6 py-2 */
+  border-radius: 0.375rem; /* rounded */
+  font-weight: 500; /* font-medium */
+}
+
+.landing-button-primary {
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+}
+
+.landing-button-primary:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+
+.landing-button-secondary {
+  background-color: #edf2f7; /* bg-gray-100 */
+  color: #2d3748; /* text-gray-800 */
+}
+
+.landing-button-secondary:hover {
+  background-color: #e2e8f0; /* hover:bg-gray-200 */
+}
+
+/* Gaya untuk halaman login */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebf8ff; /* bg-blue-50 */
+  padding-left: 1rem; /* px-4 */
+  padding-right: 1rem; /* px-4 */
+}
+
+.login-box {
+  width: 100%;
+  max-width: 24rem; /* max-w-sm */
+  background-color: white;
+  border-radius: 0.375rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  padding: 1.5rem; /* p-6 */
+}
+
+.login-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700; /* font-bold */
+  color: #2d3748; /* text-gray-800 */
+  margin-bottom: 1rem; /* mb-4 */
+  text-align: center;
+}
+
+.role-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* gap-4 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.role-button {
+  padding: 0.25rem 0.75rem; /* px-3 py-1 */
+  border-radius: 0.375rem; /* rounded */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  cursor: pointer;
+}
+
+.role-button.siswa {
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+}
+
+.role-button.siswa:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+
+.role-button.admin {
+  background-color: #edf2f7; /* bg-gray-200 */
+  color: #2d3748; /* text-gray-700 */
+}
+
+.role-button.admin:hover {
+  background-color: #e2e8f0; /* hover:bg-gray-200 */
+}
+
+.error-text {
+  font-size: 0.875rem; /* text-sm */
+  color: #f56565; /* text-red-500 */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* space-y-4 */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem; /* gap-2 */
+}
+
+.input-label {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  color: #4a5568; /* text-gray-600 */
+}
+
+.input-field {
+  padding: 0.5rem 0.75rem; /* px-3 py-2 */
+  border: 1px solid #e2e8f0; /* border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.375rem; /* rounded */
+  font-weight: 600; /* font-semibold */
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+
+.toggle-link {
+  font-size: 0.875rem; /* text-sm */
+  text-align: center;
+  color: #3182ce; /* text-blue-600 */
+  cursor: pointer;
+}
+
+.toggle-link:hover {
+  text-decoration: underline; /* hover:underline */
+}
+
+/* Gaya untuk halaman UserStatus */
+.user-status-container {
+  padding: 1.5rem; /* p-6 */
+  background-color: #f7fafc; /* bg-gray-100 */
+  min-height: 100vh; /* min-h-screen */
+}
+
+.user-status-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600; /* font-semibold */
+  color: #e53e3e; /* text-red-700 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.no-books-text {
+  color: #a0aec0; /* text-gray-500 */
+}
+
+.books-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-item {
+  background-color: white;
+  padding: 1rem; /* p-4 */
+  border-radius: 0.375rem; /* rounded */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title {
+  font-weight: 700; /* font-bold */
+}
+
+.book-author {
+  font-size: 0.875rem; /* text-sm */
+  color: #4a5568; /* text-gray-600 */
+}
+
+.return-button {
+  background-color: #ecc94b; /* bg-yellow-500 */
+  color: white;
+  padding: 0.25rem 0.75rem; /* px-3 py-1 */
+  border-radius: 0.375rem; /* rounded */
+  transition: background-color 0.2s;
+}
+
+.return-button:hover {
+  background-color: #d69e2e; /* hover:bg-yellow-600 */
+}
+
+/* Gaya untuk UserLayout */
+.user-layout-container {
+  min-height: 100vh; /* min-h-screen */
+  background-color: #f7fafc; /* bg-gray-50 */
+  padding-bottom: 5rem; /* pb-20 */
+}
+
+.bottom-nav-container {
+  padding-bottom: 1rem; /* Menambahkan padding untuk BottomNav */
+}
+
+/* Gaya untuk UserDashboard */
+.user-dashboard-container {
+  background-color: #f7fafc; /* bg-gray-100 */
+  min-height: 100vh; /* min-h-screen */
+  padding-bottom: 5rem; /* pb-20 */
+}
+
+.user-dashboard-header {
+  background-color: #2b6cb0; /* bg-blue-700 */
+  color: white;
+  padding: 1rem 1.5rem; /* p-4 */
+  border-radius: 1.5rem 1.5rem 0 0; /* rounded-b-3xl */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+}
+
+.user-dashboard-content {
+  padding: 1rem; /* p-4 */
+  margin-bottom: 2rem; /* space-y-6 */
+}
+
+.search-bar-container {
+  margin-top: 1rem; /* mt-4 */
+}
+
+.bottom-nav-container {
+  padding-bottom: 1rem; /* Menambahkan padding untuk BottomNav */
+}
+
+/* Gaya untuk PinjamanPage */
+.pinjaman-container {
+  padding: 1rem; /* p-4 */
+}
+
+.pinjaman-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.no-books-text {
+  color: #a0aec0; /* text-gray-500 */
+}
+
+.books-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-item {
+  background-color: white;
+  padding: 0.75rem; /* p-3 */
+  border-radius: 0.375rem; /* rounded */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* gap-4 */
+}
+
+.book-cover {
+  width: 4rem; /* w-16 */
+  height: 6rem; /* h-24 */
+  object-fit: cover; /* object-cover */
+  border-radius: 0.375rem; /* rounded */
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title {
+  font-weight: 500; /* font-medium */
+}
+
+.book-author {
+  font-size: 0.875rem; /* text-sm */
+  color: #4a5568; /* text-gray-500 */
+}
+
+/* src/index.css */
+
+/* Gaya untuk AdminDashboard */
+.admin-dashboard-container {
+  background: linear-gradient(180deg, #e3f2fd 0%, #bbdefb 100%);
+  min-height: 100vh;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Jika ingin memberikan jarak vertikal antar elemen, bisa menggunakan margin-bottom pada elemen anak */
+.admin-dashboard-container > *:not(:last-child) {
+  margin-bottom: 1.5rem; /* margin-bottom setara dengan space-y-6 */
+}
+
+
+.admin-dashboard-title {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700; /* font-bold */
+  color: #2b6cb0; /* text-blue-700 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.stat-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  width: 200px;
+  height: 120px;
+  color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stat-card.orange {
+  background-color: #f97316;
+}
+
+.stat-card.green {
+  background-color: #22c55e;
+}
+
+.stat-card.blue {
+  background-color: #3b82f6;
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+
+/* Button umum */
+.button {
+  padding: 0.5rem 1.5rem; /* px-6 py-2 */
+  border-radius: 0.375rem; /* rounded */
+  font-weight: 500; /* font-medium */
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+}
+
+.button-primary:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+
+.button-secondary {
+  background-color: #edf2f7; /* bg-gray-100 */
+  color: #2d3748; /* text-gray-800 */
+}
+
+.button-secondary:hover {
+  background-color: #e2e8f0; /* hover:bg-gray-200 */
+}
+
+/* Form Add/Edit Buku */
+.form-container {
+  background-color: white;
+  padding: 1rem; /* p-4 */
+  border-radius: 0.375rem; /* rounded */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+}
+
+.form-input {
+  padding: 0.5rem 0.75rem; /* px-3 py-2 */
+  border: 1px solid #e2e8f0; /* border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+}
+
+.form-input-full {
+  width: 100%; /* w-full */
+}
+
+/* Table Daftar Buku */
+.table-container {
+  background-color: white;
+  padding: 1rem; /* p-4 */
+  border-radius: 0.375rem; /* rounded */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem; /* p-2 */
+  border-bottom: 1px solid #e2e8f0; /* border-b */
+}
+
+.table-header {
+  background-color: #edf2f7; /* bg-gray-100 */
+}
+
+.table-button {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #3182ce; /* text-blue-600 */
+}
+
+.table-button:hover {
+  color: #2b6cb0; /* hover:text-blue-700 */
+}
+
+/* Validasi Pengembalian Buku */
+.return-book-container {
+  background-color: white;
+  padding: 1rem; /* p-4 */
+  border-radius: 0.375rem; /* rounded */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+}
+
+.return-button {
+  background-color: #48bb78; /* bg-green-500 */
+  color: white;
+  padding: 0.25rem 0.75rem; /* px-3 py-1 */
+  border-radius: 0.375rem; /* rounded */
+  cursor: pointer;
+}
+
+.return-button:hover {
+  background-color: #38a169; /* hover:bg-green-600 */
+}
+
+/* Laporan Peminjaman */
+.report-container {
+  background-color: white;
+  padding: 1rem; /* p-4 */
+  border-radius: 0.375rem; /* rounded */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+}
+
+.report-item {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 0.5rem;
+}
+
+/* CRUD Kategori Buku */
+.category-container {
+  background-color: white;
+  padding: 1rem; /* p-4 */
+  border-radius: 0.375rem; /* rounded */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+}
+
+.category-input {
+  padding: 0.5rem 0.75rem; /* px-3 py-2 */
+  border: 1px solid #e2e8f0; /* border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+}
+
+.category-button {
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+  padding: 0.5rem 1.5rem; /* px-6 py-2 */
+  border-radius: 0.375rem; /* rounded */
+  cursor: pointer;
+}
+
+.category-button:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+
+/* Bottom Navigation */
+.bottom-nav-container {
+  padding-bottom: 1rem; /* Menambahkan padding untuk BottomNav */
+}
+/* src/index.css */
+
+/* Gaya untuk BookList */
+.book-list-container {
+  display: grid;
+  grid-template-columns: 1fr; /* grid-cols-1 */
+  gap: 1rem; /* gap-4 */
+}
+
+@media (min-width: 768px) {
+  .book-list-container {
+    grid-template-columns: repeat(2, 1fr); /* grid-cols-2 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .book-list-container {
+    grid-template-columns: repeat(3, 1fr); /* grid-cols-3 */
+  }
+}
+
+.book-item {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  padding: 1rem; /* p-4 */
+  border-radius: 0.375rem; /* rounded */
+  border: 1px solid #e2e8f0; /* border */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 700; /* font-bold */
+  color: #2d3748; /* text-gray-800 */
+}
+
+.book-author {
+  color: #4a5568; /* text-gray-600 */
+}
+
+.book-status {
+  font-size: 0.875rem; /* text-sm */
+  margin-top: 0.25rem; /* mt-1 */
+}
+
+.book-status span {
+  font-weight: 600; /* font-semibold */
+}
+
+.book-status-available {
+  color: #38a169; /* text-green-600 */
+}
+
+.book-status-unavailable {
+  color: #e53e3e; /* text-red-600 */
+}
+
+.book-button {
+  margin-top: 1rem; /* mt-4 */
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+  border-radius: 0.375rem; /* rounded */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+/* src/index.css */
+
+/* Gaya untuk BottomNav */
+.bottom-nav-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-top: 1px solid #e2e8f0; /* border-t */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* shadow-inner */
+  border-radius: 1rem 1rem 0 0; /* rounded-t-xl */
+  z-index: 50;
+}
+
+.bottom-nav-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0; /* py-2 */
+  font-size: 0.875rem; /* text-sm */
+}
+
+.bottom-nav-button {
+  color: #3182ce; /* text-blue-600 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bottom-nav-button-inactive {
+  color: #4a5568; /* text-gray-600 */
+}
+
+.bottom-nav-logout {
+  color: #dd6b20; /* text-orange-600 */
+}
+
+/* Gaya untuk Logout Confirm Modal */
+.logout-modal-container {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4); /* bg-black bg-opacity-40 */
+}
+
+.logout-modal {
+  background-color: white;
+  border-radius: 0.375rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-xl */
+  padding: 1.5rem; /* p-6 */
+  width: 20rem; /* w-80 */
+  text-align: center;
+}
+
+.logout-modal-title {
+  font-size: 1rem; /* text-base */
+  font-weight: 600; /* font-semibold */
+  color: #2d3748; /* text-gray-800 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.logout-modal-button {
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+  padding: 0.5rem 1.5rem; /* py-2 px-4 */
+  border-radius: 0.375rem; /* rounded */
+  font-weight: 600; /* font-semibold */
+  cursor: pointer;
+}
+
+.logout-modal-button:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+
+.logout-modal-cancel {
+  color: #e53e3e; /* text-red-500 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.logout-modal-cancel:hover {
+  color: #e53e3e; /* hover:text-red-600 */
+}
+/* src/index.css */
+
+/* Gaya untuk BottomNavAdmin */
+.bottom-nav-admin-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-top: 1px solid #e2e8f0; /* border-t */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* shadow-inner */
+  border-radius: 1rem 1rem 0 0; /* rounded-t-xl */
+  z-index: 50;
+}
+
+.bottom-nav-admin-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0; /* py-2 */
+  font-size: 0.875rem; /* text-sm */
+}
+
+.bottom-nav-admin-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bottom-nav-admin-button-dashboard {
+  color: #3182ce; /* text-blue-600 */
+}
+
+.bottom-nav-admin-button-books {
+  color: #4a5568; /* text-gray-600 */
+}
+
+.bottom-nav-admin-button-logout {
+  color: #dd6b20; /* text-orange-600 */
+}
+
+/* Gaya untuk Logout Confirm Modal */
+.logout-admin-modal-container {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4); /* bg-black bg-opacity-40 */
+}
+
+.logout-admin-modal {
+  background-color: white;
+  border-radius: 0.375rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-xl */
+  padding: 1.5rem; /* p-6 */
+  width: 20rem; /* w-80 */
+  text-align: center;
+}
+
+.logout-admin-modal-title {
+  font-size: 1rem; /* text-base */
+  font-weight: 600; /* font-semibold */
+  color: #2d3748; /* text-gray-800 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.logout-admin-modal-button {
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+  padding: 0.5rem 1.5rem; /* py-2 px-4 */
+  border-radius: 0.375rem; /* rounded */
+  font-weight: 600; /* font-semibold */
+  cursor: pointer;
+}
+
+.logout-admin-modal-button:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+
+.logout-admin-modal-cancel {
+  color: #e53e3e; /* text-red-500 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.logout-admin-modal-cancel:hover {
+  color: #e53e3e; /* hover:text-red-600 */
+}
+/* src/index.css */
+
+/* Gaya untuk BukuPopuler */
+.buku-populer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* mb-2 */
+}
+
+.buku-populer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.25rem; /* px-1 */
+}
+
+.buku-populer-title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  color: #2d3748; /* text-gray-800 */
+}
+
+.buku-populer-button {
+  font-size: 0.875rem; /* text-sm */
+  color: #3182ce; /* text-blue-600 */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.buku-populer-button:hover {
+  color: #2b6cb0; /* hover:text-blue-700 */
+}
+
+.buku-list-container {
+  display: flex;
+  gap: 0.75rem; /* gap-3 */
+  overflow-x: auto;
+  padding-bottom: 0.5rem; /* pb-2 */
+  scroll-behavior: smooth;
+}
+
+.buku-item {
+  min-width: 120px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+  border-radius: 0.375rem; /* rounded-lg */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 16rem; /* h-64 */
+}
+
+.buku-image {
+  width: 100%;
+  height: 9rem; /* h-36 */
+  object-fit: cover; /* object-cover */
+  border-top-left-radius: 0.375rem; /* rounded-t */
+}
+
+.buku-info {
+  padding: 0.5rem 0.5rem; /* px-2 py-2 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buku-title {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.buku-button {
+  margin-top: 0.5rem; /* mt-2 */
+  padding: 0.25rem 0.5rem; /* px-2 py-1 */
+  border-radius: 0.375rem; /* rounded */
+  font-size: 0.875rem; /* text-sm */
+  color: white;
+}
+
+.buku-button-available {
+  background-color: #2b6cb0; /* bg-blue-500 */
+  cursor: pointer;
+}
+
+.buku-button-available:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-600 */
+}
+
+.buku-button-unavailable {
+  background-color: #cbd5e0; /* bg-gray-400 */
+  cursor: not-allowed;
+}
+
+.buku-button-unavailable:hover {
+  background-color: #e2e8f0; /* hover:bg-gray-400 */
+}
+/* src/index.css */
+
+/* Gaya untuk HeaderUser */
+.header-user-container {
+  background-color: #2b6cb0; /* bg-blue-700 */
+  padding: 1rem; /* p-4 */
+  border-bottom-left-radius: 1.5rem; /* rounded-b-2xl */
+  border-bottom-right-radius: 1.5rem; /* rounded-b-2xl */
+  color: white;
+}
+
+.header-user-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-user-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-user-name {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+}
+
+.header-user-target {
+  font-size: 0.875rem; /* text-sm */
+}
+
+.header-user-avatar {
+  width: 2.5rem; /* w-10 */
+  height: 2.5rem; /* h-10 */
+  border-radius: 50%; /* rounded-full */
+  border: 2px solid white; /* border-2 border-white */
+}
+/* src/index.css */
+
+/* Gaya untuk ModalPinjam */
+.modal-container {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* bg-black bg-opacity-40 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 0.375rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  padding: 1.5rem; /* p-6 */
+  max-width: 24rem; /* max-w-sm */
+  width: 100%;
+}
+
+.modal-title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.modal-description {
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.modal-button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem; /* gap-2 */
+}
+
+.modal-button {
+  padding: 0.25rem 1rem; /* px-4 py-1 */
+  border-radius: 0.375rem; /* rounded */
+  font-size: 0.875rem; /* text-sm */
+}
+
+.modal-button-cancel {
+  background-color: #e2e8f0; /* bg-gray-300 */
+  cursor: pointer;
+}
+
+.modal-button-cancel:hover {
+  background-color: #cbd5e0; /* hover:bg-gray-400 */
+}
+
+.modal-button-confirm {
+  background-color: #2b6cb0; /* bg-blue-600 */
+  color: white;
+  cursor: pointer;
+}
+
+.modal-button-confirm:hover {
+  background-color: #2b3b7f; /* hover:bg-blue-700 */
+}
+/* src/index.css */
+
+/* Gaya untuk SearchBar */
+.search-bar-container {
+  position: relative;
+  width: 100%;
+  max-width: 24rem; /* max-w-md */
+  margin: 0 auto;
+}
+
+.search-bar-input {
+  width: 100%;
+  padding-left: 2.5rem; /* pl-10 */
+  padding-right: 1rem; /* pr-4 */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 9999px; /* rounded-full */
+  border: 1px solid #e2e8f0; /* border */
+  outline: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+  transition: all 0.3s ease;
+}
+
+.search-bar-input:focus {
+  border-color: #2b6cb0; /* focus:ring-blue-400 */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* focus:ring-2 */
+}
+
+.search-bar-icon {
+  position: absolute;
+  left: 1rem; /* left-4 */
+  top: 50%;
+  transform: translateY(-50%); /* -translate-y-1/2 */
+  color: #a0aec0; /* text-gray-400 */
+  font-size: 1.25rem; /* FaSearch size */
+}
+/* Container utama */
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Judul */
+.container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form label dan input */
+label {
+  display: block;
+  margin-bottom: 15px;
+  color: #444;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 6px rgba(74,144,226,0.3);
+}
+
+/* Error message */
+.error {
+  background-color: #ffe6e6;
+  color: #cc0000;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Tombol submit */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #4a90e2;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  background-color: #357abd;
+}
+
+button[type="submit"]:disabled {
+  background-color: #a1c0f3;
+  cursor: not-allowed;
+}
+
+/* Tombol toggle */
+.toggle-button {
+  display: block;
+  margin: 20px auto 0;
+  background: none;
+  border: none;
+  color: #4a90e2;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.toggle-button:hover:not(:disabled) {
+  color: #357abd;
+}
+
+.toggle-button:disabled {
+  color: #a1c0f3;
+  cursor: not-allowed;
+}
+/* Container utama AdminDashboard */
+.admin-dashboard-container {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Judul dashboard */
+.admin-dashboard-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2563eb; /* biru cerah */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Form container */
+.form-container {
+  background-color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Input styling */
+.form-input {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.4);
+}
+
+/* Button styling */
+.button-primary {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.button-primary:hover {
+  background-color: #1e40af;
+}
+
+/* Table container */
+.table-container {
+  overflow-x: auto;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.table th {
+  background-color: #eff6ff;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.table-button {
+  color: #2563eb;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.table-button:hover {
+  background-color: #dbeafe;
+}
+
+/* Responsive: buat tabel bisa scroll horizontal di mobile */
+@media (max-width: 600px) {
+  .admin-dashboard-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .form-container {
+    padding: 1rem;
+  }
+}
+body {
+  background: linear-gradient(180deg, #e3f2fd 0%, #bbdefb 100%);
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* src/index.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7fafc;
+  margin: 0;
+  padding: 20px;
+  color: #2d3748;
+}
+
+h1 {
+  color: #2b6cb0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.favorit-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.favorit-item {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.favorit-item strong {
+  color: #2b6cb0;
+  font-size: 1.1rem;
+}
+
+button {
+  margin-top: 8px;
+  margin-right: 10px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #2b6cb0;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+button:last-child {
+  background-color: #e53e3e;
+}
+
+button:last-child:hover {
+  background-color: #9b2c2c;
+}
+/* Tombol Keluar di bottom nav */
+.bottom-nav-logout {
+  background-color: #4a5568; /* abu-abu tua */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Tombol Ya, Keluar di modal */
+.logout-modal-button {
+  background-color: #2d3748; /* abu-abu gelap */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Tombol Batal di modal */
+.logout-modal-cancel {
+  background-color: #a0aec0; /* abu-abu terang */
+  color: #1a202c; /* hitam gelap */
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.bottom-nav-button-inactive {
+  background-color: #3182ce; /* warna biru */
+  color: white;              /* tulisan putih */
+  font-weight: 700;          /* tulisan bold */
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-family: Arial, sans-serif;
+}
+.modal-overlay {
+  position: fixed;
+  inset: 0; /* sama dengan top:0; left:0; right:0; bottom:0 */
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  z-index: 9999;
+  padding: 1rem;
+}
+
+.modal-container {
+  position: relative;
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px 30px;
+  max-width: 360px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.modal-book-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.jumlah-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.jumlah-controls button {
+  width: 36px;
+  height: 36px;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.jumlah-controls input {
+  width: 60px;
+  height: 36px;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-pinjam {
+  padding: 10px 24px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  flex: 1;
+}
+
+.btn-batal {
+  padding: 10px 24px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  flex: 1;
+}
