@@ -118,3 +118,20 @@ Berikut adalah paket/library yang digunakan agar aplikasi dapat berjalan dengan 
 - [Jinja2 Template Engine](https://jinja.palletsprojects.com/)  
 - [SQLAlchemy Documentation](https://docs.sqlalchemy.org/)  
 - [Alembic Documentation](https://alembic.sqlalchemy.org/en/latest/)
+
+
+---
+## Dokumentasi
+
+![Screenshot (376)](https://github.com/user-attachments/assets/ed781e5e-a77c-49f4-9719-a6a92a081cb2)
+![Screenshot (377)](https://github.com/user-attachments/assets/0513d822-5cb7-42e0-a818-8d3527028e11)
+![Screenshot (378)](https://github.com/user-attachments/assets/81e607ac-5cde-4ef1-92b8-6226343719bc)
+![Screenshot (379)](https://github.com/user-attachments/assets/557efe59-afeb-45cf-b0d0-e8341733fbb7)
+![Screenshot (380)](https://github.com/user-attachments/assets/174fcae4-53d9-415b-aecc-5023a5c6e21b)
+![Screenshot (381)](https://github.com/user-attachments/assets/8b4e001e-f642-41c9-83ac-8b5504e25765)
+![Screenshot (363)](https://github.com/user-attachments/assets/ba8e08a7-b6c5-43b5-82af-727b325a07c2)
+![Screenshot (364)](https://github.com/user-attachments/assets/dab3ea32-702c-43a0-b363-0319224e7dbe)
+![Screenshot (365)](https://github.com/user-attachments/assets/743440e6-3a75-419e-a999-f6ab8e0672cb)
+![Screenshot (366)](https://github.com/user-attachments/assets/f929798f-34c5-4fcd-b590-d1555fd32681)
+![Screenshot (382)](https://github.com/user-attachments/assets/a6bc710c-d10e-49cd-b512-8bf12fadff7c)
+![Screenshot (383)](https://github.com/user-attachments/assets/52576796-2ddc-49b9-88f9-62f5b5dc2f9f)
