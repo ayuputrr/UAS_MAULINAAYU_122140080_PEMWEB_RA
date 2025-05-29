@@ -111,6 +111,11 @@ Berikut adalah paket/library yang digunakan agar aplikasi dapat berjalan dengan 
 - Halaman laporan peminjaman yang membantu admin memonitor aktivitas peminjaman.
 
 ---
+## Testing Backend
+Jalankan pengujian backend dari direktori backend/:
+ ```bash
+  pytest
+  ```
 
 ## Referensi
 - [React Documentation](https://reactjs.org/docs/getting-started.html)  
