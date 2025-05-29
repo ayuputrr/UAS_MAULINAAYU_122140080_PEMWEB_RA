@@ -1,0 +1,143 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff; /* warna background halaman */
+  height: 100%;
+}
+
+.admin-dashboard-container {
+  background: white;
+  max-width: 700px;
+  margin: 0 auto;        /* agar card di tengah secara horizontal */
+  padding: 20px 30px 80px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.admin-dashboard-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.search-input-container {
+  max-width: 400px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.total-dipinjam {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.export-button-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.export-button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #1976D2;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.export-button:hover {
+  background-color: #135ba1;
+}
+
+.books-list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.book-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.book-cover {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.book-info {
+  flex: 1;
+}
+
+.book-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.status-text {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-returned {
+  color: green;
+}
+
+.status-not-returned {
+  color: #e63946;
+}
+
+.actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.action-button {
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  border: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.return-button {
+  background-color: #2a9d8f;
+}
+
+.return-button:hover {
+  background-color: #24786b;
+}
+
+.delete-button {
+  background-color: #e53e3e;
+}
+
+.delete-button:hover {
+  background-color: #b82b2b;
+}
+
+.error-text {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}

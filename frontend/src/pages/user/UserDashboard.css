@@ -1,0 +1,161 @@
+/* Gaya untuk cover buku */
+.cover-buku {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+.search-bar-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.user-dashboard-content {
+  transition: transform 0.3s ease;
+}
+
+.user-dashboard-content.scroll-up {
+  transform: translateY(-20px);
+}
+
+.user-dashboard-content.scroll-down {
+  transform: translateY(20px);
+}
+
+.category-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.85s ease, transform 0.85s ease;
+}
+
+.category-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.modal-book-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.jumlah-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.jumlah-controls button {
+  background-color: #2978f0;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 0 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.jumlah-controls input[type="number"] {
+  width: 60px;
+  text-align: center;
+  font-size: 16px;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn-pinjam {
+  background-color: #2978f0;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-pinjam:hover {
+  background-color: #1c5ed6;
+}
+
+.btn-batal {
+  background-color: #ddd;
+  border: none;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-batal:hover {
+  background-color: #bbb;
+}
+
+.bottom-nav-container {
+  margin-top: 1rem;
+}
+
+.user-dashboard-container {
+  background-color: #f7fafc;
+  min-height: 100vh;
+  padding-bottom: 5rem;
+}
+
+.user-dashboard-header {
+  background-color: #2b6cb0;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-dashboard-content {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-bar-container {
+  margin-top: 1rem;
+}
+
+.bottom-nav-container {
+  padding-bottom: 1rem;
+}

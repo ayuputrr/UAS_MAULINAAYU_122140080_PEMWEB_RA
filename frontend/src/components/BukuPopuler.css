@@ -1,0 +1,98 @@
+.buku-populer-container {
+  padding: 8px;
+}
+
+.buku-list-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 8px;
+}
+
+
+.buku-list-container::-webkit-scrollbar {
+  height: 20px;
+}
+.buku-list-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+.buku-list-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+.buku-list-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.buku-item {
+  flex: 0 0 auto;
+  width: 160px; 
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  box-sizing: border-box;
+  margin-right: 1rem; 
+}
+
+.buku-image {
+  width: 100%;
+  height: 150px; 
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.buku-info {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.buku-title {
+  font-size: 0.875rem; 
+  font-weight: bold;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 40px;
+}
+
+.buku-buttons {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+  margin-top: -16px; 
+}
+
+.buku-button {
+  padding: 6px 10px;
+  background-color: #2978f0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  flex: 1;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s ease;
+}
+
+.buku-button-favorit {
+  background-color: #f0a500;
+}
+
+.buku-button:hover {
+  opacity: 0.9;
+}
