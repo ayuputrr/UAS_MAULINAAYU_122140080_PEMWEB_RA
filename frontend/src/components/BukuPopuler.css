@@ -73,7 +73,8 @@
   gap: 8px;
   width: 100%;
   justify-content: center;
-  margin-top: -16px; 
+  margin-top: -27px; 
+  margin-bottom: -27px; 
 }
 
 .buku-button {
@@ -84,6 +85,7 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.875rem;
+  margin-bottom: 4px;
   flex: 1;
   text-overflow: ellipsis;
   transition: background-color 0.3s ease;
