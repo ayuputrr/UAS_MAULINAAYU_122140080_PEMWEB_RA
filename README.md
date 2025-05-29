@@ -1,6 +1,5 @@
 # UAS_PEMWEB_RA_MAULINA_122140080
 
-
 # Pustaka-App
 
 ## Deskripsi
@@ -47,6 +46,59 @@ Berikut adalah paket/library yang digunakan agar aplikasi dapat berjalan dengan 
 
 - **pytest**  
   Framework testing Python untuk menulis dan menjalankan test backend.
+
+---
+
+## Cara Menjalankan
+
+### 1. Jalankan Backend
+- Pastikan Python 3 sudah terinstall.
+- (Opsional tapi direkomendasikan) Buat dan aktifkan virtual environment:
+  ```bash
+  python -m venv venv
+  source venv/bin/activate  # Linux/macOS
+  venv\Scripts\activate     # Windows
+  ```
+- Install dependensi backend:
+  ```bash
+  pip install pyramid pyramid_jinja2 sqlalchemy alembic waitress pytest
+  ```
+- Jalankan migrasi database (jika menggunakan Alembic):
+  ```bash
+  alembic upgrade head
+  ```
+- Jalankan server backend:
+  ```bash
+  pserve development.ini --reload
+  ```
+  *(Sesuaikan dengan file konfigurasi yang ada di proyek)*
+
+### 2. Jalankan Frontend
+- Pastikan Node.js dan npm/yarn sudah terinstall.
+- Masuk ke folder frontend (`src`):
+  ```bash
+  cd src
+  ```
+- Install dependensi frontend:
+  ```bash
+  npm install
+  ```
+  atau
+  ```bash
+  yarn install
+  ```
+- Jalankan frontend development server:
+  ```bash
+  npm start
+  ```
+  atau
+  ```bash
+  yarn start
+  ```
+- Buka browser dan akses:
+  ```
+  http://localhost:3000
+  ```
 
 ---
 
